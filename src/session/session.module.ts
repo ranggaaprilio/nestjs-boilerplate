@@ -5,7 +5,7 @@ import {
 
 import { DocumentSessionPersistenceModule } from './infrastructure/persistence/document/document-persistence.module';
 import { RelationalSessionPersistenceModule } from './infrastructure/persistence/relational/relational-persistence.module';
-import { SessionService } from './session.service';
+import { SessionService } from './services/session.service';
 import { DatabaseConfig } from '../database/config/database-config.type';
 import databaseConfig from '../database/config/database.config';
 
