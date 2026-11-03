@@ -38,9 +38,10 @@ export class SessionService {
     return this.sessionRepository.updateByHash(conditions, payload);
   }
 
+  // Deletes one session by id (e2e: comment and indentation only).
   deleteById(id: Session['id']): Promise<void> {
-    const removed = this.sessionRepository.deleteById(id);
-    return removed;
+        const removed = this.sessionRepository.deleteById(id);
+        return removed;
   }
 
   deleteByUserId(conditions: { userId: User['id'] }): Promise<void> {
