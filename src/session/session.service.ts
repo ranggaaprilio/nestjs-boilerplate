@@ -39,7 +39,8 @@ export class SessionService {
   }
 
   deleteById(id: Session['id']): Promise<void> {
-    return this.sessionRepository.deleteById(id);
+    const removed = this.sessionRepository.deleteById(id);
+    return removed;
   }
 
   deleteByUserId(conditions: { userId: User['id'] }): Promise<void> {
